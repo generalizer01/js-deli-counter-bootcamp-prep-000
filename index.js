@@ -15,4 +15,16 @@ function nowServing(line) {
 		return ("There is nobody waiting to be served!") }
 }
 
-function 
+function currentLine(line) {
+	
+	if (line.length>0) {
+		var sentence = 'The line is currently: '
+		for (var i=0;i==line.length;i++) {
+			sentence = sentence + (`$[i]. $[line[i]]`)
+    }
+    return sentence
+}
+	else {
+		return ('The line is currently empty')
+    }
+}
