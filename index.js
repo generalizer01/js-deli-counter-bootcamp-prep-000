@@ -21,9 +21,9 @@ function currentLine(line) {
 		var sentence = 'The line is currently: '
 		for (var i=0;i==line.length;i++) {
 			sentence = sentence + (`$[i]. $[line[i]]`)
-    }
+  }
     return sentence
-}
+  }
 	else {
 		return ('The line is currently empty')
     }
