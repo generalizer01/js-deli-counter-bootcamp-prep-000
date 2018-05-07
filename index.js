@@ -18,9 +18,9 @@ function nowServing(line) {
 function currentLine(line) {
 	
 	if (line.length>0) {
-		var sentence = 'The line is currently: '
+		var sentence = 'The line is currently:'
 		for (var i=0;i==line.length;i++) {
-			sentence = sentence + (`$[i]. $[line[i]]`)
+			sentence = sentence + (` ${i}. ${line[i]}`)
   }
     return sentence
   }
